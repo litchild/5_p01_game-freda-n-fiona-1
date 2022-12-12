@@ -21,36 +21,57 @@ This project will be completed in phases. The first phase will be to work on thi
 ### Necessary Features
 What are the core features that your game should have? These should be things that __must__ be implemented in order to make the game playable, not extra features that could be added to make the game more fun to play.
 
-Three different objects that represent the player controlled paddle, a ball, and the layers of bricks. The ball should bounce off the paddle and walls and break the bricks when in contact. When the ball falls to the bottom of the screen past the paddle it resets but the bricks remain the same and the game continues. 
+Three different objects that represent the player controlled paddle, a ball, and the layers of bricks. The ball should bounce off the paddle and walls and break the bricks when in contact, and the speed of the ball will increase. When the ball falls to the bottom of the screen past the paddle it resets but the bricks remain the same and the game continues. 
 
 ### Extra Features
 What are some features that are not essential to gameplay, but you would like to see (provided you have time after completing the necessary features.
 
-YOUR ANSWERS HERE
+A score for when bricks are broken, different speed increases depending on what layer of bricks were broken, and limited rounds (ie. if the ball hits the bottom of the screen three times everything resets). 
 
 
 ### Controls
 How will your game be controlled? If the mouse will be used, explain how. List all keyboard commands as well.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- r = reset the entire game
 
 Mouse Conrol:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: moving the paddle (mouseX will be equal to the location of the paddle's center)
+- Mouse pressed: start the ball moving (
 
 
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assingments, you will have to add new features to them.
 
-CLASS NAME0
+Ball
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - x, y
+  - r (radius)
+  - xvelocity, yvelocity
 - METHODS
-  - LIST METHODS HERE
+  - move
+  - display
+  - reset
+  - bounce
 
-CLASS NAME1
+Paddle
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - paddleWidth, paddleHeight
+  - px, py
 - METHODS
-  - LIST METHODS HERE
+  - move
+  - display
+  - paddleCollide (have to divide into three sections for bounce) 
+  - reset 
+
+Bricks (will be array)
+- Instance variables:
+  - brickHeight, brickWidth (note: will be randomized)
+  - bx, by
+  - nextbx, nextby 
+- METHODS
+  - display
+  - ballCollide 
+  - reset 
+  - randomizedBricks
+
