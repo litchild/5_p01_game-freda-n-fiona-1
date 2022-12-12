@@ -1,5 +1,5 @@
 # Project 01 For NeXT CS
-### Class Period:
+### Class Period: 05
 ### Name0: Fiona Zhang
 ### Name1: Freda Dong
 ---
