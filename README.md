@@ -1,7 +1,7 @@
 # Project 01 For NeXT CS
 ### Class Period:
-### Name0: YOUR NAME HERE
-### Name1: OTHER NAME HERE (delete this line if you are working solo)
+### Name0: Fiona Zhang
+### Name1: Freda Dong
 ---
 
 
@@ -16,12 +16,12 @@ This project will be completed in phases. The first phase will be to work on thi
 
 ## Phase 0: Game Selection, Analysis & Plan
 
-#### Selected Game: YOUR GAME HERE
+#### Selected Game: Breakout/Arkanoid
 
 ### Necessary Features
 What are the core features that your game should have? These should be things that __must__ be implemented in order to make the game playable, not extra features that could be added to make the game more fun to play.
 
-YOUR ANSWERS HERE
+Three different objects that represent the player controlled paddle, a ball, and the layers of bricks. The ball should bounce off the paddle and walls and break the bricks when in contact. When the ball falls to the bottom of the screen past the paddle it resets but the bricks remain the same and the game continues. 
 
 ### Extra Features
 What are some features that are not essential to gameplay, but you would like to see (provided you have time after completing the necessary features.
