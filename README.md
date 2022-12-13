@@ -64,9 +64,9 @@ Paddle
   - paddleCollide (have to divide into three sections for bounce) 
   - reset 
 
-Bricks (will be array)
+Bricks (will be 2D array)
 - Instance variables:
-  - brickHeight, brickWidth (note: will be randomized)
+  - brickHeight, brickWidth (note: width will be randomized)
   - bx, by
   - nextbx, nextby 
 - METHODS
