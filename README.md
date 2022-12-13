@@ -43,35 +43,47 @@ Mouse Conrol:
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assingments, you will have to add new features to them.
 
+Driver file: 
+- Variables:
+  - bricks: int numLayers, int numBricks (for array) 
+  - int ballRadius
+  - int PADDLE_WIDTH, PADDLE_HEIGHT
+  - Ball b
+  - Paddle p
+  - Brick[][] bricks
+- METHODS
+  - reset
+  - mouseClick
+  - keyPressed
+  - setup
+  - draw
+
+
 Ball
 - Instance variables:
   - x, y
   - r (radius)
   - xvelocity, yvelocity
 - METHODS
-  - move
-  - display
-  - reset
-  - bounce
+  - move: moves the ball (invoke bounce here)
+  - display: display the ball
+  - bounce: what happens when it bounces off walls, paddle, and bricks? also increase speed here)
 
 Paddle
 - Instance variables:
   - paddleWidth, paddleHeight
   - px, py
 - METHODS
-  - move
-  - display
-  - paddleCollide (have to divide into three sections for bounce) 
-  - reset 
+  - move: moves the paddle (sync in driver file, inputs for px and py are mouseX and mouseY) 
+  - display: display the padde
 
-Bricks (will be 2D array)
+Brick (will be 2D array)
 - Instance variables:
   - brickHeight, brickWidth (note: width will be randomized)
   - bx, by
   - nextbx, nextby 
 - METHODS
-  - display
-  - ballCollide 
-  - reset 
-  - randomizedBricks
+  - display: display bricks (invoke randomizedBricks, also put 2d array here)
+  - randomizedBricks (randomize brickWidth)
+  - ballCollide (if ball bounce, brick disappears)(unsure how it will work with the other bounce) 
 
